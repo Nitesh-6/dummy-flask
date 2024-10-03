@@ -3,5 +3,6 @@
 import os
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://root:Anumula%40123%24@localhost:3306/login_db'  # Ensure correct port for MySQL
+    # SQLite database URI
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///login_db.sqlite3'  # This will create a SQLite file named login_db.sqlite3 in the current directory
     SQLALCHEMY_TRACK_MODIFICATIONS = False
